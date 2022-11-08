@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<meta charset="UTF-8">
+
+<head> <meta name="viewport" content="width=device-width, initial-scale-1.0"> <title>Sign up</title>
+
+</head> <style>
+h1{
+text-align: center; font-size: 10ch; color: rgb(19, 19, 18);
+}
+
+body{
+
+background-color: rgb(92, 80, 17); text-align: center;
+}
+
+body{
+
+background-image: url("im.gif");
+
+background-position: center; background-repeat: no-repeat; background-size: cover;
+}
+p{
+color: rgb(12, 12, 12); font-size: x-large;
+
+
+
+font-family: Franklin Gothic Medium", 'Arial Narrow', Arial, sans-serif;
+}
+
+small{
+
+color: black; font-size: larger;
+}
+ input[type-submit] { background-color: #e27474;
+
+border: none; color: rgb(255, 255, 255);
+
+padding: 15px 11px; text-decoration:none;
+
+margin: 2px 1px; cursor: pointer;
+}
+
+</style>
+<body>
+
+<h1><u>Signup page</u></h1>
+
+<form method="POST" action=" ">
+
+ 
+
+
+<p>Username</p> <input type="text" name="username" id="username" maxlength="25" size="25" required> 
+
+<p>Email</p><input type="text" name="email" id="email" maxlength="25" size="25" required>
+<p>Roll number</p><input type="text" name="rno" id="rno" maxlength="25" size="25" required>
+<p>Password</p> <input type="password" name="password" id="password" maxlength="25" size="25" required>
+<br><br>
+<input type="submit" value="Signup">
+<br><br>
+<small><u>Already have an account<a href="{{ url_for('login') }}"> 
+<br></u>Login</a></small>
+
+
+
+
+</form>
+
+</body>
+
+</html> 
